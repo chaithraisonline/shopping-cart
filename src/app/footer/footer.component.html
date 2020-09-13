@@ -1,0 +1,68 @@
+
+<div class="flexLayout container">
+<div fxFlex>
+    <mat-grid-list cols="4"  rowHeight="100px" > 
+        <mat-grid-tile [colspan]="1" [rowspan]="3">
+           <h1>MAGICFLORA</h1>
+       </mat-grid-tile>
+       <mat-grid-tile [colspan]="1" [rowspan]="3">
+           <mat-list>
+              <a routerLink="/menu"><h1> COMPANY</h1></a>
+                <mat-list-item>home</mat-list-item>
+                <mat-list-item>about us</mat-list-item>
+                <mat-list-item>career</mat-list-item>
+            </mat-list>
+       </mat-grid-tile>
+      
+       <mat-grid-tile [colspan]="1" [rowspan]="2">
+           <mat-list>
+              <a href=""><h1>HELP</h1></a>
+                <mat-list-item>customer service</mat-list-item>
+                <mat-list-item>flower guide</mat-list-item>
+                <mat-list-item>plant guide</mat-list-item>
+            </mat-list>
+         </mat-grid-tile>
+      
+       <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <mat-list>
+                 <a href=""><h1>CONTACT</h1></a>
+                <label>we are here for you 24 hours 7 days</label>
+                <mat-list-item><mat-icon prefix>email</mat-icon>email us</mat-list-item>
+                <mat-list-item><mat-icon>sms</mat-icon>click to chat</mat-list-item>
+
+            </mat-list>
+       </mat-grid-tile>
+      
+       <mat-grid-tile [colspan]="1" [rowspan]="3">
+            <mat-list>
+              <a href=""><h1> ACCOUNT</h1></a>
+                <mat-list-item>manage your account</mat-list-item>
+                <mat-list-item>track your order</mat-list-item>
+                <mat-list-item>order history</mat-list-item>
+                <mat-list-item>remainder service</mat-list-item>
+            </mat-list>
+       </mat-grid-tile>
+
+       <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <mat-list>
+                <mat-list-item><h1>SUBSCRIBE FOR EMAIL OFFERS</h1></mat-list-item><br>
+                 <form>  
+                    <mat-form-field appearance="outline">
+                      <mat-label>ENTER EMAIL</mat-label>
+                      <input matInput placeholder="placeholder">                     
+                    </mat-form-field>
+                     <button mat-raised-button color="primary">submit</button>
+                </form>
+            </mat-list>
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan]="4" [rowspan]="2">
+           <h1>CONNECT</h1>                
+           <mat-icon>email</mat-icon>
+        </mat-grid-tile>
+                  
+
+    </mat-grid-list>
+
+</div>
+</div>

@@ -1,0 +1,13 @@
+.container
+{
+     background-size:cover; 
+     background-image:url("/assets/images/cube.jpg");
+
+
+}
+ .card 
+ {
+     height:250px;
+     width:300px;
+     
+}

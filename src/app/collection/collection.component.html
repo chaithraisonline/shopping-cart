@@ -1,0 +1,24 @@
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap >
+    <div fxFlex>
+        <div>
+             <h1>IMAGES</h1>
+             <hr>
+        </div>
+    </div>
+ </div>
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap >
+    <div fxFlex *ngIf="flowers">
+        <mat-grid-list cols="2" rowHeight="300px" > 
+            <mat-grid-tile *ngFor="let pics of flowers"(click)="onSelect(pics)" >
+                <img height="300px" src={{pics.image}} alt={{pics.name}}/>
+                 <mat-grid-tile-footer>{{pics.name}}</mat-grid-tile-footer>
+            </mat-grid-tile>
+         </mat-grid-list>
+    </div>
+    <div [hidden]="flowers">
+        <mat-spinner ></mat-spinner><h4>Loading... Please Wait</h4>
+    </div>
+
+</div>
